@@ -2,8 +2,13 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $coordinates = $_POST['cordinate'];
-    $recipt = $_POST['recipt'];
-    $message = $_POST['message'];
+    $name = $_POST['fname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $damage = $_POST['damage'];
+    $lostitem = $_POST['lostitem'];
+    $reportReg = $_POST['report'];
+    $reportNo = $_POST['reportNo'];
 
     $values = explode(',', trim($coordinates, '()'));
     $latitude = $values[0];
@@ -12,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include '../dbconfig.php';
 
     // Insert the form data into the database
-    $sql = "INSERT INTO tb_theft (latitude, longitude, recipt, message)
-            VALUES ('$latitude', '$longitude', '$recipt', '$message')";
+    $sql = "INSERT INTO tb_theft (latitude, longitude, uname, uemail, uphone, udamage, ulostitem,ureportReg,ureportNo)
+            VALUES ('$latitude', '$longitude', '$name', '$email', '$phone', '$damage', '$lostitem', '$reportReg', '$reportNo')";
 
     if ($con->query($sql) === TRUE) {
-        echo "<script>window.location.href='/thief/new/checking.tabgraphix.net/check-safe-location/';</script>";
+        echo "<script>window.location.href='/Thief-Website-Working/site/check-safe-location/';</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

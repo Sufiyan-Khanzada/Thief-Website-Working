@@ -5207,19 +5207,51 @@ We use it here to ensure columns blocks display well across themes.
                                   <div class="modal-dialog">
                                     <div class="modal-content">
                                       <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h6 class="h1 modal-title fs-5" id="exampleModalLabel">Provide Theft Information</h61>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                       </div>
                                       <form action="insert.php" method="post">
                                         <div class="modal-body">
                                           <input type="hidden" class="form-control" id="cordinate" name="cordinate">
                                           <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <label for="recipient-name" class="col-form-label">Name:</label>
                                             <input type="text" class="form-control" required name="recipt" id="recipient-name">
                                           </div>
                                           <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">Message:</label>
-                                            <textarea class="form-control" required name="message" id="message-text"></textarea>
+                                            <label for="recipient-email" class="col-form-label">Email:</label>
+                                            <input type="email" class="form-control" required name="email" id="recipient-email">
+                                          </div>
+                                          
+                                          <div class="mb-3">
+                                            <label for="recipient-phone" class="col-form-label">Phone:</label>
+                                            <input type="text" class="form-control" required name="Phone" id="recipient-phone">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="recipient-cost" class="col-form-label">Cost Of damage:</label>
+                                            <input type="text" class="form-control" required name="cost" id="recipient-damage">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="recipient-lost" class="col-form-label">Item Lost:</label>
+                                            <input type="text" class="form-control" required name="lost" id="recipient-lost">
+                                          </div>
+                                          <div class="mb-3">
+                                            <div class="form-check">
+                                              Did you file a police report?
+                                              <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="report" id="yes" value="yes">
+                                                Yes
+                                              </label>
+                                              <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="report" id="no" value="no">
+                                                No
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="reportno">Police Report #</label>
+                                            <input type="text"
+                                              class="form-control" name="reportno" id="reportno" placeholder="reportNo">
+                                          </div>
                                           </div>
                                         </div>
                                         <div class="modal-footer">
