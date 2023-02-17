@@ -32,6 +32,27 @@
       padding-top: 0px !important;
       padding-bottom: 0px !important;
     }
+
+    #rs-header .logo-area .site-title a p {
+      font-size: 0.58em;
+      padding: 0;
+      margin: 0;
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      line-height: 0;
+      letter-spacing: 0.13em;
+    }
+
+    #rs-header .logo-area .site-title a h1 {
+      font-size: 0.7em;
+      padding: 0;
+      color: #fff;
+      margin: 0;
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      line-height: 2em;
+
+    }
   </style>
 </head>
 
@@ -106,12 +127,18 @@
               <div class="col-cell header-logo">
                 <div class="logo-area">
                   <div class="site-title">
-                    <a href="index.php" rel="home">Theif Security</a>
+                    <a href="index.php" rel="home">
+                      <h1>Protect Your Valuables with NoMoreTheft</h1>
+                      <p>The Ultimate Solution for Preventing Theft</p>
+                    </a>
                   </div>
                 </div>
                 <div class="logo-area sticky-logo">
                   <h1 class="site-title">
-                    <a href="index.php" rel="home">Theif Security</a>
+                    <a href="index.php" rel="home">
+                      <h1>Protect Your Valuables with NoMoreTheft</h1>
+                      <p>The Ultimate Solution for Preventing Theft</p>
+                    </a>
                   </h1>
                 </div>
               </div>
